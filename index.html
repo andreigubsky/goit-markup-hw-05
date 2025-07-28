@@ -24,6 +24,8 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- #region Header -->
+
     <header class="page-header">
       <div class="container">
         <nav class="navigation">
@@ -56,8 +58,11 @@
         </address>
       </div>
     </header>
+    <!-- #endregion -->
+
+    <!-- #region Main -->
     <main class="section-list">
-      <!-- Section 1 - Main -->
+      <!-- #region Section 1 - Main -->
       <section class="section main-page">
         <div class="container">
           <h1 class="main-page-header">
@@ -66,8 +71,9 @@
           <button type="button" class="main-button">Order Service</button>
         </div>
       </section>
+      <!-- #endregion -->
 
-      <!-- Section 2 - Benefits -->
+      <!-- #region Section 2 - Benefits -->
       <section class="section benefits">
         <div class="container">
           <h2 class="section-header visually-hidden">Our benefits</h2>
@@ -123,8 +129,9 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion -->
 
-      <!-- Section 3 - Team -->
+      <!-- #region Section 3 - Team -->
       <section class="section team">
         <div class="container">
           <h2 class="section-header">Our Team</h2>
@@ -360,8 +367,9 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion -->
 
-      <!-- Section 4 - Portfolio -->
+      <!-- #region Section 4 - Portfolio -->
       <section class="section portfolio">
         <div class="container">
           <h2 class="section-header">Our Portfolio</h2>
@@ -488,8 +496,11 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion -->
     </main>
+    <!-- #endregion -->
 
+    <!-- #region Footer -->
     <footer class="page-footer">
       <div class="container">
         <div class="message-footer">
@@ -564,5 +575,63 @@
         <!-- #endregion -->
       </div>
     </footer>
+    <!-- #endregion -->
+
+    <!-- #region Modal window -->
+    <div class="">
+      <div class="">
+        <svg class="footer-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+        <h3 class="modal_header">
+          Leave your contacts and we will call you back
+        </h3>
+        <form action="" class="modal-form">
+          <label for="modal_name" class="modal-form-label"
+            >Name
+            <input
+              type="text"
+              name="modal_name"
+              class="modal-form-input"
+              autofocus
+            />
+          </label>
+          <label for="modal_phone" class="modal-form-label"
+            >Phone
+            <input type="text" name="modal_phone" class="modal-form-input" />
+          </label>
+          <label for="modal_email" class="modal-form-label"
+            >Email
+            <input type="text" name="modal_email" class="modal-form-input"
+          /></label>
+          <label for="modal_comment" class="modal-form-label"
+            >Comment
+            <textarea
+              name="modal_comment"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+              class="modal-form-comment"
+            ></textarea>
+          </label>
+          <div class="checkbox-area">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id=""
+              class="modal-form-checkbox"
+            />
+            <p class="privacy-policy-descr">
+              I accept the terms and conditions of the
+              <a href="" class="privacy-policy-link">Privacy Policy</a>
+            </p>
+          </div>
+
+          <button type="submit" class="modal-form-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion -->
   </body>
 </html>
