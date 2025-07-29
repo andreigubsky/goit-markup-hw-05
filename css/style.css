@@ -740,11 +740,32 @@ Main -> Section our-portfolio - 4
     margin-bottom: 4px;
 }
 
+.icon-input {
+    width: 26px;
+    height: 26px;
+    /* line-height: 26px;
+    text-align: center; */
+    /* margin-right: -26px; */
+    position: relative;
+    top: 33px;
+    left: 16px;
+    z-index: 1;
+    float: left;
+}
+
 .modal-form-input {
     width: 360px;
     height: 40px;
-    border: 1px solid #2E2F4266;
+    border: 1px solid #2F4266;
     border-radius: 4px;
+    padding-left: 26px;
+}
+
+.modal-form-input:focus,
+.modal-form-input:hover,
+.modal-form-input:active {
+
+    border: 1px solid blue;
 }
 
 .form-input:placeholder-shown {

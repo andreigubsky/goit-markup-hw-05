@@ -578,7 +578,7 @@
     <!-- #endregion -->
 
     <!-- #region Modal window -->
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <svg class="footer-icon" width="24" height="24">
           <use href="./images/icons.svg#icon-cross"></use>
@@ -589,6 +589,9 @@
         <form action="" class="modal-form">
           <label for="modal_name" class="modal-form-label"
             >Name
+            <svg class="icon-input" width="24" height="24">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
             <input
               type="text"
               name="modal_name"
@@ -598,10 +601,17 @@
           </label>
           <label for="modal_phone" class="modal-form-label"
             >Phone
+            <svg class="icon-input" width="24" height="24">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+
             <input type="text" name="modal_phone" class="modal-form-input" />
           </label>
           <label for="modal_email" class="modal-form-label"
             >Email
+            <svg class="icon-input" width="24" height="24">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
             <input type="text" name="modal_email" class="modal-form-input"
           /></label>
           <label for="modal_comment" class="modal-form-label"
@@ -621,6 +631,7 @@
               name="checkbox"
               id=""
               class="modal-form-checkbox"
+              value="accept-policy"
             />
             <p class="privacy-policy-descr">
               I accept the terms and conditions of the
