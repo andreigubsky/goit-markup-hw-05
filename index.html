@@ -551,26 +551,21 @@
 
         <!-- #region Footer subscribe form+ -->
         <div class="subscribe-footer">
-          
-            <div class="wraper-feedback-input">
-              <p class="feedback-paragraph">Subscribe</p>
-              <form action="" class="feedback-form" name="feedback-form">
-                <label for="" class="feedback-label-input" name="feedback_input">
-                  <input
-                  type="email"
-                  name="feedback_input"
-                  class="feedback-input"
-                  placeholder="E-mail"
-                  />
-                </label>
-                <button type="submit" class="feedback-btn">
-                  Subscribe<svg class="icon-feedback" width="24" height="24">
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </form>
-            </div>
-            
+          <p class="feedback-paragraph">Subscribe</p>
+          <form class="feedback-form">
+            <label class="feedback-label-input">
+              <input
+                type="email"
+                name="feedback_input"
+                class="feedback-input"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="feedback-btn">
+              Subscribe<svg class="icon-feedback" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
         <!-- #endregion -->
@@ -592,13 +587,14 @@
         <h3 class="modal_header">
           Leave your contacts and we will call you back
         </h3>
-        <form action="" class="modal-form">
+        <form class="modal-form">
           <label for="modal_name" class="modal-form-label"
             ><span class="label-text">Name</span>
             <svg class="icon-input" width="18" height="24">
               <use href="./images/icons.svg#icon-modal-person"></use>
             </svg>
             <input
+              id="modal_name"
               type="text"
               name="modal_name"
               class="modal-form-input"
@@ -611,20 +607,29 @@
               <use href="./images/icons.svg#icon-modal-phone"></use>
             </svg>
 
-            <input type="text" name="modal_phone" class="modal-form-input" />
+            <input
+              type="tel"
+              name="modal_phone"
+              class="modal-form-input"
+              id="modal_phone"
+            />
           </label>
           <label for="modal_email" class="modal-form-label"
             ><span class="label-text">Email</span>
             <svg class="icon-input" width="18" height="24">
               <use href="./images/icons.svg#icon-modal-email"></use>
             </svg>
-            <input type="text" name="modal_email" class="modal-form-input"
+            <input
+              type="email"
+              name="modal_email"
+              class="modal-form-input"
+              id="modal_email"
           /></label>
           <label for="modal_comment" class="modal-form-label"
             ><span class="label-text">Comment</span>
             <textarea
               name="modal_comment"
-              id=""
+              id="modal_comment"
               cols="30"
               rows="10"
               placeholder="Text input"
@@ -636,7 +641,6 @@
             <input
               type="checkbox"
               name="checkbox"
-              id=""
               class="modal-form-checkbox"
               value="accept-policy"
             />
