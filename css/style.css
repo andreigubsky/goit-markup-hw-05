@@ -709,9 +709,7 @@ Main -> Section our-portfolio - 4
     max-height: 80%;
     overflow-y: auto;
     display: flex;
-    flex-direction: column;
-    flex-grow: 2;
-    
+    flex-direction: column;    
 }
 .modal .icon-close-wrapper{
     align-self: flex-end;
@@ -731,10 +729,21 @@ Main -> Section our-portfolio - 4
     justify-content: center;
     align-items: center;
     margin-bottom: 24px;
-    /* сделать круглым */
+/* сделать круглым и при наведении менять цвет */
+    position: relative;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-close-wrapper:hover,
+.icon-close-wrapper:focus{
+    background-color: #404BBF;
 }
 
 .icon-close {
+    
+}
+
+.icon-close-hover {
+    opacity: 1;
 }
 
 .modal_header {
@@ -763,13 +772,12 @@ Main -> Section our-portfolio - 4
   }
 
 .icon-input {
-    width: 26px;
-    height: 26px;
+    width: 18px;
+    height: 24px;
     position: relative;
     top: 34px;
     left: 16px;
     z-index: 1;
-    float: left;
 }
 
 .modal-form-input {
@@ -798,13 +806,13 @@ Main -> Section our-portfolio - 4
     width: 360px;
     border: 1px solid rgba(46,47,66, 40%);
     border-radius: 4px;
-
 }
 
 .checkbox-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    gap: 8px;
     width: 360px;
     margin-bottom: 24px;
 }
@@ -818,8 +826,21 @@ Main -> Section our-portfolio - 4
     width: 16px;
     border: 1px solid rgba(46,47,66, 40%);
     border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-div-checkbox:hover,
+.modal-div-checkbox:focus{
+    background-color: #404BBF;
+    opacity: 1;
 }
 
+.icon-check{ 
+}
+.icon-check:hover{   
+}
 .privacy-policy-descr {
     font-size: 12px;
     letter-spacing: 0.04;
