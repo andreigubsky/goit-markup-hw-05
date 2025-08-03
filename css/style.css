@@ -616,7 +616,8 @@ Main -> Section our-portfolio - 4
 
 /* #region Footer subscribe form */
 .subscribe-footer {}
-.wraper-feedback-input{}
+
+.wraper-feedback-input {}
 
 .feedback-form {
     display: flex;
@@ -629,7 +630,8 @@ Main -> Section our-portfolio - 4
     flex-direction: column;
     gap: 16px;
 }
-.feedback-paragraph{
+
+.feedback-paragraph {
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -637,6 +639,7 @@ Main -> Section our-portfolio - 4
     letter-spacing: 0.02em;
     color: #ffffff;
 }
+
 .feedback-input {
     width: 264px;
     height: 40px;
@@ -668,11 +671,11 @@ Main -> Section our-portfolio - 4
 
 .feedback-btn {
     Font-family: "Roboto", sans-serif;
-    font-size:16px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color:#ffffff;
+    color: #ffffff;
     min-width: 165px;
     height: 40px;
     display: flex;
@@ -683,7 +686,7 @@ Main -> Section our-portfolio - 4
     border: none;
     border-radius: 4px;
     padding: 8px 24px;
-    cursor:pointer;
+    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -692,14 +695,15 @@ Main -> Section our-portfolio - 4
     background-color: #404BBF;
     cursor: pointer;
 }
-.icon-send{
+
+.icon-send {
     margin-left: 16px;
 }
 
 /* #endregion */
 
 .modal-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -711,28 +715,35 @@ Main -> Section our-portfolio - 4
     align-items: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 250ms ease-in-out;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
-    background-color: white;
+    background-color: #fcfcfc;
     border-radius: 4px;
     padding: 24px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     max-width: 408px;
-    max-height: 80%;
+    max-height: 584PX;
     overflow-y: auto;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal .icon-close-wrapper{
+
+.modal .icon-close-wrapper {
     align-self: flex-end;
 }
+
 .modal-overlay.is-open {
     opacity: 1;
     pointer-events: auto;
 }
-.icon-close-wrapper{
+
+.icon-close-wrapper {
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -743,18 +754,17 @@ Main -> Section our-portfolio - 4
     justify-content: center;
     align-items: center;
     margin-bottom: 24px;
-/* сделать круглым и при наведении менять цвет */
+    /* сделать круглым и при наведении менять цвет */
     position: relative;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .icon-close-wrapper:hover,
-.icon-close-wrapper:focus{
+.icon-close-wrapper:focus {
     background-color: #404BBF;
 }
 
-.icon-close {
-    
-}
+.icon-close {}
 
 .icon-close-hover {
     opacity: 1;
@@ -776,14 +786,15 @@ Main -> Section our-portfolio - 4
 .modal-form-label {
     font-size: 12px;
     line-height: 1.17;
-    color:#8E8F99;
+    color: #8E8F99;
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
 }
+
 .label-text {
     margin-bottom: 4px;
-  }
+}
 
 .icon-input {
     width: 18px;
@@ -798,7 +809,7 @@ Main -> Section our-portfolio - 4
 .modal-form-input {
     width: 360px;
     height: 40px;
-    border: 1px solid rgba(46,47,66, 40%);
+    border: 1px solid rgba(46, 47, 66, 40%);
     border-radius: 4px;
     padding-left: 40px;
 }
@@ -817,9 +828,9 @@ Main -> Section our-portfolio - 4
     line-height: 1.17;
     letter-spacing: 0.04;
     padding-top: 8px;
-    padding-left: 16px ;
+    padding-left: 16px;
     width: 360px;
-    border: 1px solid rgba(46,47,66, 40%);
+    border: 1px solid rgba(46, 47, 66, 40%);
     border-radius: 4px;
 }
 
@@ -836,29 +847,32 @@ Main -> Section our-portfolio - 4
     display: none;
     margin-right: 8px;
 }
-.icon-check{ 
+
+.icon-check {
     opacity: 0;
 }
-.modal-div-checkbox{
+
+.modal-div-checkbox {
     height: 16px;
     width: 16px;
-    border: 1px solid rgba(46,47,66, 40%);
+    border: 1px solid rgba(46, 47, 66, 40%);
     border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-div-checkbox:hover,
-.modal-div-checkbox:focus{
+.modal-div-checkbox:focus {
     background-color: #404BBF;
     border: 1px solid #404BBF;
     opacity: 1;
 }
 
 
-.icon-check:hover{   
-}
+.icon-check:hover {}
+
 .privacy-policy-descr {
     font-size: 12px;
     letter-spacing: 0.04;
@@ -894,7 +908,7 @@ Main -> Section our-portfolio - 4
 }
 
 .modal-form-btn:hover,
-.modal-form-btn:focus{
+.modal-form-btn:focus {
     background-color: #404BBF;
     cursor: pointer;
 }
