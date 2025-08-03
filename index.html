@@ -590,48 +590,53 @@
         </p>
         <form class="modal-form">
           <div class="form-wrapper">
-            <label for="modal_name" class="modal-form-label"
+            <label for="user_name" class="modal-form-label"
               ><span class="label-text">Name</span>
-              <svg class="icon-input" width="18" height="24">
-                <use href="./images/icons.svg#icon-modal-person"></use>
-              </svg>
-              <input
-                id="modal_name"
-                type="text"
-                name="modal_name"
-                class="modal-form-input"
-                autofocus
-              />
+              <div class="icon-input-wrapper">
+                <input
+                  id="user_name"
+                  type="text"
+                  name="user_name"
+                  class="modal-form-input"
+                  autofocus
+                />
+                <svg class="icon-input" width="18" height="24">
+                  <use href="./images/icons.svg#icon-modal-person"></use>
+                </svg>
+              </div>
             </label>
             <label for="modal_phone" class="modal-form-label"
               ><span class="label-text">Phone</span>
-              <svg class="icon-input" width="18" height="24">
-                <use href="./images/icons.svg#icon-modal-phone"></use>
-              </svg>
 
-              <input
-                type="tel"
-                name="modal_phone"
-                class="modal-form-input"
-                id="modal_phone"
-              />
+              <div class="icon-input-wrapper">
+                <input
+                  type="tel"
+                  name="modal_phone"
+                  class="modal-form-input"
+                  id="modal_phone"
+                />
+                <svg class="icon-input" width="18" height="24">
+                  <use href="./images/icons.svg#icon-modal-phone"></use>
+                </svg>
+              </div>
             </label>
             <label for="modal_email" class="modal-form-label"
               ><span class="label-text">Email</span>
-              <svg class="icon-input" width="18" height="24">
-                <use href="./images/icons.svg#icon-modal-email"></use>
-              </svg>
-              <input
-                type="email"
-                name="modal_email"
-                class="modal-form-input"
-                id="modal_email"
-            /></label>
-            <label for="modal_comment" class="modal-form-label"
+              <div class="icon-input-wrapper">
+                <input
+                  type="email"
+                  name="modal_email"
+                  class="modal-form-input"
+                  id="modal_email"
+                /><svg class="icon-input" width="18" height="24">
+                  <use href="./images/icons.svg#icon-modal-email"></use>
+                </svg></div
+            ></label>
+            <label for="user-comment" class="modal-form-label"
               ><span class="label-text">Comment</span>
               <textarea
-                name="modal_comment"
-                id="modal_comment"
+                name="user-comment"
+                id="user-comment"
                 cols="30"
                 rows="10"
                 placeholder="Text input"
