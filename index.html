@@ -593,7 +593,7 @@
             <label for="user-name" class="modal-form-label">Name</label>
             <div class="icon-input-wrapper">
               <input
-                id="user_name"
+                id="user-name"
                 type="text"
                 name="user-name"
                 class="modal-form-input"
@@ -644,21 +644,21 @@
           </div>
 
           <div class="checkbox-wrapper">
+            <label for="user-privacy" class="privacy-label"
+              ><svg class="icon-check" width="10" height="8">
+                <use href="./images/icons.svg#icon-check-active"></use>
+              </svg><span
+              class="privacy-label-span"
+            ></spanI accept the terms and conditions of the
+            ></label>
             <input
               type="checkbox"
-              name="checkbox"
-              class="modal-form-checkbox"
-              value="accept-policy"
+              name="user-privacy"
+              class="modal-form-checkbox visually-hidden"
+              value="true"
             />
-            <div class="modal-div-checkbox">
-              <svg class="icon-check" width="10" height="8">
-                <use href="./images/icons.svg#icon-check-active"></use>
-              </svg>
-            </div>
-            <p class="privacy-policy-descr">
-              I accept the terms and conditions of the
               <a href="" class="privacy-policy-link">Privacy Policy</a>
-            </p>
+          
           </div>
           <button type="button" class="modal-form-btn">Send</button>
         </form>
