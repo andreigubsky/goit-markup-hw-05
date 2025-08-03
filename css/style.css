@@ -839,7 +839,8 @@ Main -> Section our-portfolio - 4
 
 .modal-form-input:focus,
 .modal-form-input:hover {
-    border-color: #4D5AE5;
+    /* border-color: #4D5AE5; */
+    fill: #4D5AE5;
 }
 
 .form-input:placeholder-shown {
