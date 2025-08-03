@@ -590,7 +590,7 @@
         </p>
         <form class="modal-form">
           <div class="form-wrapper">
-            <label for="user_name" class="modal-form-label">Name </label>
+            <label for="user-name" class="modal-form-label">Name</label>
             <div class="icon-input-wrapper">
               <input
                 id="user_name"
@@ -603,6 +603,8 @@
                 <use href="./images/icons.svg#icon-modal-person"></use>
               </svg>
             </div>
+          </div>
+          <div class="form-wrapper">
             <label for="modal_phone" class="modal-form-label">Phone </label>
             <div class="icon-input-wrapper">
               <input
@@ -615,6 +617,8 @@
                 <use href="./images/icons.svg#icon-modal-phone"></use>
               </svg>
             </div>
+          </div>
+          <div class="form-wrapper">
             <label for="modal_email" class="modal-form-label">Email </label>
             <div class="icon-input-wrapper">
               <input
@@ -626,37 +630,37 @@
                 <use href="./images/icons.svg#icon-modal-email"></use>
               </svg>
             </div>
-            <label for="user-comment" class="modal-form-label"
-              >Comment
-              <textarea
-                name="user-comment"
-                id="user-comment"
-                cols="30"
-                rows="10"
-                placeholder="Text input"
-                class="modal-form-comment"
-              ></textarea>
-            </label>
-
-            <div class="checkbox-wrapper">
-              <input
-                type="checkbox"
-                name="checkbox"
-                class="modal-form-checkbox"
-                value="accept-policy"
-              />
-              <div class="modal-div-checkbox">
-                <svg class="icon-check" width="10" height="8">
-                  <use href="./images/icons.svg#icon-check-active"></use>
-                </svg>
-              </div>
-              <p class="privacy-policy-descr">
-                I accept the terms and conditions of the
-                <a href="" class="privacy-policy-link">Privacy Policy</a>
-              </p>
-            </div>
-            <button type="button" class="modal-form-btn">Send</button>
           </div>
+          <div class="form-wrapper-comment">
+            <label for="user-comment" class="modal-form-label">Comment </label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+              class="modal-form-comment"
+            ></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input
+              type="checkbox"
+              name="checkbox"
+              class="modal-form-checkbox"
+              value="accept-policy"
+            />
+            <div class="modal-div-checkbox">
+              <svg class="icon-check" width="10" height="8">
+                <use href="./images/icons.svg#icon-check-active"></use>
+              </svg>
+            </div>
+            <p class="privacy-policy-descr">
+              I accept the terms and conditions of the
+              <a href="" class="privacy-policy-link">Privacy Policy</a>
+            </p>
+          </div>
+          <button type="button" class="modal-form-btn">Send</button>
         </form>
       </div>
     </div>
