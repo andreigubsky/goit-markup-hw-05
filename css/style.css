@@ -861,7 +861,7 @@ Main -> Section our-portfolio - 4
 
 }
 
-.modal-form-input:focus-within .icon-input {
+.modal-form-input:focus-within+.icon-input {
     fill: #4D5AE5;
 }
 
