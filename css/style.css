@@ -901,7 +901,7 @@ Main -> Section our-portfolio - 4
     margin-bottom: 24px;
 }
 
-.modal-form-checkbox:checked privacy-label-span {
+.modal-form-checkbox:checked .privacy-label-span {
     background-color: var(--color-ocean);
     border: none;
     fill: var(--color-svg);
