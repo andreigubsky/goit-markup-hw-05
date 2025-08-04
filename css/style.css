@@ -766,19 +766,16 @@ Main -> Section our-portfolio - 4
 
 .icon-close-wrapper:hover,
 .icon-close-wrapper:focus {
+    fill: #ffffff;
     background-color: #404BBF;
     border: none;
 }
 
-.icon-close {
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-close:hover,
-.icon-close:focus {
+.icon-close-wrapper:hover .icon-close,
+.icon-close-wrapper:focus .icon-close {
     fill: #FFFFFF;
 }
+
 
 .icon-close-hover {
 
@@ -858,8 +855,8 @@ Main -> Section our-portfolio - 4
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-input:hover,
-.icon-input:focus {
+.modal-form-input:hover .icon-input,
+.modal-form-input:focus .icon-input:focus {
     fill: #4D5AE5;
 }
 
