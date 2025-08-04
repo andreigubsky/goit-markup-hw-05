@@ -771,6 +771,10 @@ Main -> Section our-portfolio - 4
     border: none;
 }
 
+.icon-close {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .icon-close-wrapper:hover .icon-close,
 .icon-close-wrapper:focus .icon-close {
     fill: #FFFFFF;
@@ -856,7 +860,8 @@ Main -> Section our-portfolio - 4
 }
 
 .modal-form-input:hover .icon-input,
-.modal-form-input:focus .icon-input:focus {
+.modal-form-input:focus .icon-input,
+.modal-form-input:active .icon-input {
     fill: #4D5AE5;
 }
 
@@ -893,6 +898,11 @@ Main -> Section our-portfolio - 4
     gap: 8px;
     width: 360px;
     margin-bottom: 24px;
+}
+
+.modal-form-checkbox:checked span {
+    border: none;
+    fill: var(--color-svg);
 }
 
 .privacy-label {
