@@ -530,18 +530,17 @@ Main -> Section our-portfolio - 4
 
 .page-footer .container p {
     max-width: 264px;
+    margin-right: 120px;
 }
 
 .page-footer .container {
     display: flex;
-    gap: 80px;
+    /* gap: 80px; */
     align-items: baseline;
     justify-content: space-evenly;
 }
 
-.message-footer {
-    /* margin-right: 120px; */
-}
+.message-footer {}
 
 .page-footer .logo {
     font-family: 'Raleway', sans-serif;
@@ -565,7 +564,7 @@ Main -> Section our-portfolio - 4
 
 /* #region Social media */
 .social-footer-links {
-    /* padding-left: 40px; */
+    margin-right: 80px;
 }
 
 .social-description {
@@ -700,7 +699,7 @@ Main -> Section our-portfolio - 4
 }
 
 .icon-send {
-    margin-left: 16px;
+    /* margin-left: 16px; */
 }
 
 /* #endregion */
@@ -794,7 +793,6 @@ Main -> Section our-portfolio - 4
     letter-spacing: 0.02em;
     margin-bottom: 16px;
     text-align: center;
-    margin-bottom: 16px;
     color: var(--color-navy);
 }
 
@@ -874,7 +872,6 @@ Main -> Section our-portfolio - 4
     line-height: 1.17;
     letter-spacing: 0.04em;
     padding: 8px 16px;
-    margin-bottom: 24px;
     width: 100%;
     height: 120px;
     color: rgba(46, 47, 66, 0.4);
@@ -919,6 +916,7 @@ Main -> Section our-portfolio - 4
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-right: 8px;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
