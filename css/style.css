@@ -681,7 +681,7 @@ Main -> Section our-portfolio - 4
     min-width: 165px;
     height: 40px;
     display: flex;
-    gap: 16px;
+    /* gap: 16px; */
     justify-content: center;
     align-items: center;
     background-color: #4D5AE5;
@@ -699,7 +699,7 @@ Main -> Section our-portfolio - 4
 }
 
 .icon-send {
-    /* margin-left: 16px; */
+    margin-left: 16px;
 }
 
 /* #endregion */
