@@ -530,7 +530,7 @@ Main -> Section our-portfolio - 4
 
 .page-footer .container p {
     max-width: 264px;
-    margin-right: 120px;
+
 }
 
 .page-footer .container {
@@ -540,7 +540,9 @@ Main -> Section our-portfolio - 4
     justify-content: space-evenly;
 }
 
-.message-footer {}
+.message-footer {
+    margin-right: 120px;
+}
 
 .page-footer .logo {
     font-family: 'Raleway', sans-serif;
